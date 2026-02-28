@@ -1,0 +1,9 @@
+# Environment Variable Management
+python-dotenv
+
+# FastAPI
+fastapi
+uvicorn
+
+# Data Validation
+pydantic
