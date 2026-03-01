@@ -1,5 +1,9 @@
 from fastapi import FastAPI
-from core.config import settings
+from app.utils.settings import settings
+from app.utils.db import engine, Base
+from app.user.router import user_routes
+
+Base.metadata.create_all(engine)
 
 app = FastAPI(
     title=settings.APP_NAME,
@@ -9,3 +13,5 @@ app = FastAPI(
 @app.get("/")
 def root():
     return {"message": f"{settings.APP_NAME} is running in {settings.ENV} environment."}
+
+app.include_router(user_routes)

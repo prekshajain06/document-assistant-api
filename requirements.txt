@@ -7,3 +7,12 @@ uvicorn
 
 # Data Validation
 pydantic
+pydantic-settings
+
+# Database
+sqlalchemy
+psycopg2
+
+# Authentication
+pyjwt
+pwdlib[argon2]
