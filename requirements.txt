@@ -16,3 +16,6 @@ psycopg2
 # Authentication
 pyjwt
 pwdlib[argon2]
+
+# File Handling
+python-multipart

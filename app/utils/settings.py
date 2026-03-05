@@ -9,5 +9,6 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     ALGORITHM: str
     EXPIRE_TIME_MINUTES: int
+    UPLOAD_FOLDER: str
 
 settings = Settings()
